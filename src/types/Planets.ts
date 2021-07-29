@@ -1,4 +1,4 @@
-export const PLANETS: string[] = [
+export const PLANETS = <const>[
   "mercury",
   "venus",
   "earth",
@@ -8,3 +8,4 @@ export const PLANETS: string[] = [
   "uranus",
   "neptune",
 ];
+export type PLANET = typeof PLANETS[number];
