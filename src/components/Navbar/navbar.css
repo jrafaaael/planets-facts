@@ -1,0 +1,34 @@
+@media all and (max-width: 1023px) {
+  #navbar-menu {
+    clip-path: circle(50px at 100% -10%);
+  }
+
+  #navbar-menu.open {
+    clip-path: circle(1000px at 50% -10%);
+  }
+
+  button.cross div:first-child {
+    transform: translateY(calc(0.25rem + 0.1rem)) rotate(45deg);
+  }
+
+  button.cross div:nth-child(2) {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  button.cross div:last-child {
+    transform: translateY(calc(-0.25rem - 0.1rem)) rotate(-45deg);
+  }
+}
+
+.navbar-menu {
+  @apply w-full h-full bg-gray-700 bg-opacity-90 flex flex-col justify-evenly items-center fixed top-0 left-0 z-10 transition-all duration-500 lg:flex lg:flex-row lg:bg-transparent lg:static lg:scale-100 lg:w-min lg:gap-8;
+}
+
+.navbar-link {
+  @apply lg:text-sm uppercase font-medium relative after:absolute after:w-0 after:h-0.5 after:bg-gray-300 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:origin-left;
+}
+
+.burger {
+  @apply w-4 h-custom bg-gray-300 rounded transition-all;
+}
