@@ -5,13 +5,10 @@ module.exports = {
     extend: {
       height: {
         custom: "0.1rem",
-        lessNavbar: "calc(100% - 4rem)"
+        lessNavbar: "calc(100vh - 4rem)",
       },
-      textColor: {
-        snow: "#fffafa",
-      },
-      gridTemplateColumns: {
-        responsive: "repeat(auto-fit, minmax(min(100%, 300px), 1fr));",
+      outline: {
+        checked: "2px solid rgba(55, 65, 81, 1)",
       },
     },
   },
