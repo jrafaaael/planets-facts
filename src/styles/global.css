@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  letter-spacing: 0.1rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: rgba(17, 24, 39);
+  background-image: url(../assets/svg/background-stars.svg);
+}
