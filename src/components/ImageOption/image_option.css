@@ -1,0 +1,18 @@
+input[type="radio"]:checked + label span.option {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(209, 213, 219);
+}
+
+@media all and (min-width: 768px) {
+  input[type="radio"]:checked + label {
+    background-color: var(--color);
+    outline-color: var(--color);
+  }
+}
+
+@media all and (max-width: 768px) {
+  input[type="radio"]:checked + label {
+    border-bottom: 4px solid;
+    border-bottom-color: var(--color);
+  }
+}
