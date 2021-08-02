@@ -1,6 +1,7 @@
 import { ChangeEventHandler, CSSProperties } from "react";
 import { Option } from "../../types/PlanetImageOptions";
 import { ImageOption } from "../ImageOption/ImageOption";
+import './image_changer.css'
 
 interface Props {
   options: Option[];
@@ -21,7 +22,7 @@ export const ImageChanger = ({
 }: Props) => {
   return (
     <aside
-      className="h-[fit-content] border-b-2 border-gray-700 flex justify-around md:col-[2/3] md:row-[2/3] md:flex-col md:justify-center md:gap-5 md:border-none lg:col-[1/2] lg:self-start"
+      className="options"
       style={
         {
           "--color": color,

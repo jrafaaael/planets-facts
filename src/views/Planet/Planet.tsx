@@ -7,6 +7,7 @@ import { PlanetImage } from "../../components/PlanetImage/PlanetImage";
 import { useGetPlanet } from "../../hooks/useGetPlanet";
 import { Option, OPTIONS } from "../../types/PlanetImageOptions";
 import { PLANET, PLANETS } from "../../types/Planets";
+import './planet.css'
 
 interface Props {
   params: {
@@ -30,7 +31,7 @@ export const Planet = ({ params: { planet } }: Props) => {
       {!PLANETS.includes(planet) && <Redirect to="/" />}
       {loading && <Loading />}
       {data && (
-        <section className="h-full max-w-4xl m-auto flex flex-col justify-between gap-4 md:grid md:items-center md:grid-cols-2 md:grid-rows-[1fr,auto] md:gap-x-10 lg:h-full lg:gap-10 lg:grid-rows-[auto,auto]">
+        <section className="planet-section">
           <ImageChanger
             options={OPTIONS}
             current={selectedOption.value}
