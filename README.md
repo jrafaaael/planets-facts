@@ -3,6 +3,10 @@
 ## Overview
 Project inspired in the challenge of FrontEnd Mentor (https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). This project use a external API (https://api.le-systeme-solaire.net/en/) to get the planet facts (unlike the original project that has local files in .json format to obtain the planet facts).
 
+## Links
+Live preview: https://jrafaaael.github.io/planets-facts
+Challenge: https://jrafaaael.github.io/planets-facts
+
 ## The challenge
 
 > Planets fact site
