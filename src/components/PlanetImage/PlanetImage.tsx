@@ -9,7 +9,7 @@ interface Props {
 export const PlanetImage = ({ planet, type }: Props) => {
   return (
     <img
-      className="w-52 m-auto block md:col-[1/-1] lg:col-[1/2]"
+      className="w-52 m-auto block md:col-[1/-1] lg:col-[1/2] lg:my-0 lg:self-end"
       src={
         new URL(
           `../../assets/svg/planet-${planet}-${type}.svg`,

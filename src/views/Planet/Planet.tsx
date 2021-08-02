@@ -30,7 +30,7 @@ export const Planet = ({ params: { planet } }: Props) => {
       {!PLANETS.includes(planet) && <Redirect to="/" />}
       {loading && <Loading />}
       {data && (
-        <section className="max-w-4xl m-auto grid gap-4 md:grid-cols-2 md:grid-rows-[1fr,auto] md:gap-x-10 lg:h-full lg:grid-rows-[auto,auto]">
+        <section className="h-full max-w-4xl m-auto flex flex-col justify-between gap-4 md:grid md:items-center md:grid-cols-2 md:grid-rows-[1fr,auto] md:gap-x-10 lg:h-full lg:gap-10 lg:grid-rows-[auto,auto]">
           <ImageChanger
             options={OPTIONS}
             current={selectedOption.value}

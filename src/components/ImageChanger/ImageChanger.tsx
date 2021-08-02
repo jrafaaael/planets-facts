@@ -21,7 +21,7 @@ export const ImageChanger = ({
 }: Props) => {
   return (
     <aside
-      className="border-b-2 border-gray-700 flex justify-around md:col-[2/3] md:row-[2/3] md:flex-col md:justify-center md:gap-5 md:border-none lg:col-[1/2]"
+      className="h-[fit-content] border-b-2 border-gray-700 flex justify-around md:col-[2/3] md:row-[2/3] md:flex-col md:justify-center md:gap-5 md:border-none lg:col-[1/2] lg:self-start"
       style={
         {
           "--color": color,
